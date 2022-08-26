@@ -1,0 +1,56 @@
+header{
+    background-color: #EAC926;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.button[name="menubar"] {
+    border-radius: 0.7vw;
+    border: none;
+    font-size: 2vw;
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 1vw;
+    height: 4vw;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 12px;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+h4{
+    font-size: 24px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento, .producto{
+    font-size: 16px;
+}
+
+footer section{
+    text-align: center;
+}
+section article{
+    display: inline;
+}
+
