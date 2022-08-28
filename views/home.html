@@ -23,36 +23,38 @@
         </div>
 
         <!-- Texto -->
-        <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i><p>  
+        <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i> 
 
         <!-- Menú de navegación-->
         <nav class="navbar">
-            <ul>
-              <li type="circle"><a href="#">Ofertas</a></li>
-              <li type="circle"><a href="#">Tiendas Oficiales</a></li>
-              <li type="circle"><a href="#">Vender</a></li>
-              <li type="circle"><a href="#">Ayuda</a></li>
-              <br>
-              <li type="circle"><a href="#">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
-              <li type="circle"><a href="#">Ingresá </a><i class="fas fa-sign-in-alt"></i></li> 
-              <li type="circle"><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+            <ul type="none">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
+              <li><a href="#">Ingresá </a><i class="fas fa-sign-in-alt"></i></li> 
+              <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
 
         <!-- Botón de opciones -->
-        <button class="button" name="menubar"><i class="fa-solid fa-bars"></i></button> 
+        <div id="divboton">
+            <button class="button" name="menubar"><i class="fa-solid fa-bars"></i></button> 
+        </div>
     </header>
 
+    <!-- Banner -->
+    <img src="/img/img-home-banner.jpg" width="100%" alt="Logo Mercado Liebre" class="img" name="banner"> </img>
+    
     <main>
-        <section>
+        <section id="ultimavisita">
             <h4>Basado en tu útima visita</h4>
             <!-- Producto 1 -->
             <article id="art1">
                 <img src="/img/img-cafetera-moulinex.jpg" width="200px" height="200px" alt="Imagen Cafetera" class="img" name="cafetera"> </img>
-                <!--<p>$50 USD</p>
-                <p>20% off</p>
-                <p>Cafetera moulinex</p>-->
                 <ul type="none">
+                     <i class="fa-solid fa-truck" name="truckicon"></i>
                     <li class="precio">$50 USD</li>
                     <li class="descuento">15% off</li>
                     <li class="producto">Cafetera Moulinex</li>
@@ -62,18 +64,20 @@
             <article id="art2">
                 <img src="/img/img-samsung-galaxy-s10.jpg" width="200px" height="200px" alt="Imagen Samsung" class="img" name="celular"> </img>
                 <ul type="none">
+                    <i class="fa-solid fa-truck" name="truckicon"></i>
                     <li class="precio">$200 USD</li>
                     <li class="descuento">40% off</li>
                     <li class="producto">Samsung Galaxy S10</li>
                 </ul>
             </article>
         </section>
-        <h4>Sección de ofertas</h4>
-        <section>
+        <section id="ofertas">
+            <h4>Sección de ofertas</h4>
             <!-- Producto 1 -->
             <article id="art3">
                 <img src="/img/img-macbook-pro-2019.jpg" width="200px" height="200px" alt="Imagen Macbook" class="img" name="macbook"> </img>
-                <ul>
+                <ul type="none">
+                    <i class="fa-solid fa-truck" name="truckicon"></i>
                     <li class="precio">$400 USD</li>
                     <li class="descuento">10% off</li>
                     <li class="producto">Macbook Pro 2019</li>
@@ -83,6 +87,7 @@
             <article id="art4">
                 <img src="/img/img-tv-samsung-smart.jpg" width="200px" height="200px" alt="Imagen TV" class="img" name="tv"> </img>
                 <ul type="none">
+                    <i class="fa-solid fa-truck" name="truckicon"></i>
                     <li class="precio">$200 USD</li>
                     <li class="descuento">20% off</li>
                     <li class="producto">Samsung SmartTV</li>
@@ -96,19 +101,16 @@
             <i class='fa fa-credit-card-alt'></i>
             <h3>Pagá con tarjeta o efectivo</h3>
             <p class="pfooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-            <br>
         </section>
         <section>
             <i class="fa-solid fa-gift"></i>
             <h3>Envío gratis desde los $ 2.500</h3>  
             <p class="pfooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-            <br>
         </section>
         <section>
             <i class="fa-solid fa-user-shield"></i>
             <h3>Seguridad de principio a fin</h3>
             <p class="pfooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-            <br>
         </section>
         <section>
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
