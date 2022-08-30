@@ -3,54 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/styles.css"> </link>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Mercado Liebre</title>
 </head>
 
 <body>
-    <header>
-        <!-- Logo Mercado Liebre-->
-        <img src="/img/logo-mercado-liebre.svg" width="200px" height="200px" alt="Logo Mercado Liebre" class="img" name="logo"> </img>
-
-        <!-- Barra de búsqueda -->
-        <div class="search">
-            <form action="#"> 
-                <input type="text" placeholder="Buscar productos, marcas" class="input" name="inputsearch">
-                <button class="button" name="lupa"><i class="fa fa-search"></i></button>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <!-- Logo Mercado Liebre -->
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"> </img>
+            <!-- Barra de búsqueda -->
+            <form action="#" method="get" class="search-form"> 
+                <input type="text" placeholder="Buscar productos, marcas" class="search-input">
+                <a class="search-button"><i class="fa fa-search"></i></a>
             </form>
+            <!-- Texto -->
+            <p class="copy-header">Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i></p>
         </div>
-
-        <!-- Texto -->
-        <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i> 
+        
+        <!-- Hamburguer button -->
+        <a href="#" class="hamburguer-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
 
         <!-- Menú de navegación-->
-        <nav class="navbar">
-            <ul type="none">
+        <nav class="main-header-bottom-bar">
+            <ul class="left-navbar">
               <li><a href="#">Ofertas</a></li>
               <li><a href="#">Tiendas Oficiales</a></li>
               <li><a href="#">Vender</a></li>
               <li><a href="#">Ayuda</a></li>
-              <li><a href="#">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
-              <li><a href="#">Ingresá </a><i class="fas fa-sign-in-alt"></i></li> 
-              <li><a href="#">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+
+            <ul class="right-navbar">
+              <li><a href="#">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+              <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li> 
+              <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
             </ul>
         </nav>
 
-        <!-- Botón de opciones -->
-        <div id="divboton">
+        <!-- Botón de opciones mio-->
+        <!-- <div id="divboton">
             <button class="button" name="menubar"><i class="fa-solid fa-bars"></i></button> 
-        </div>
+        </div> -->
     </header>
 
     <!-- Banner -->
-    <img src="/img/img-home-banner.jpg" width="100%" alt="Logo Mercado Liebre" class="img" name="banner"> </img>
+    <img src="/img/img-home-banner.jpg" width="100%" alt="Logo Mercado Liebre" class="banner"> </img>
     
-    <main>
+    <!-- <main>
         <section id="ultimavisita">
             <h4>Basado en tu útima visita</h4>
-            <!-- Producto 1 -->
             <article id="art1">
                 <img src="/img/img-cafetera-moulinex.jpg" width="200px" height="200px" alt="Imagen Cafetera" class="img" name="cafetera"> </img>
                 <ul type="none">
@@ -60,7 +66,6 @@
                     <li class="producto">Cafetera Moulinex</li>
                 </ul>
             </article>
-            <!-- Producto 2 -->
             <article id="art2">
                 <img src="/img/img-samsung-galaxy-s10.jpg" width="200px" height="200px" alt="Imagen Samsung" class="img" name="celular"> </img>
                 <ul type="none">
@@ -73,7 +78,6 @@
         </section>
         <section id="ofertas">
             <h4>Sección de ofertas</h4>
-            <!-- Producto 1 -->
             <article id="art3">
                 <img src="/img/img-macbook-pro-2019.jpg" width="200px" height="200px" alt="Imagen Macbook" class="img" name="macbook"> </img>
                 <ul type="none">
@@ -83,7 +87,6 @@
                     <li class="producto">Macbook Pro 2019</li>
                 </ul>
             </article>
-            <!-- Producto 2 -->
             <article id="art4">
                 <img src="/img/img-tv-samsung-smart.jpg" width="200px" height="200px" alt="Imagen TV" class="img" name="tv"> </img>
                 <ul type="none">
@@ -115,7 +118,7 @@
         <section>
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
-    </footer>
+    </footer> -->
     <script src="https://kit.fontawesome.com/70f7d39aeb.js" crossorigin="anonymous"></script>
 </body>
 
