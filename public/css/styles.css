@@ -6,13 +6,16 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/*--- Esta parte es más para el header */
+
 .main-header{
     background-color: #EAC926;
-    padding: 20px;
+    padding: 10px;
 }
 
 .logo{
     width: 150px;
+    margin-right: 20px;
 }
 
 .copy-header{
@@ -57,7 +60,7 @@ body{
     height: 39px;
     width: 150px;
     display: flex;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .search-input{
@@ -86,12 +89,52 @@ body{
     align-items: center;
 }
 
+/*--- Esta parte es más para el footer */
+
+.main-footer-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.section-footer{
+    width: 360px;
+    text-align: center;
+}
+
+.section-footer i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.p-footer{
+    color: #666;
+    font-size: 15px;
+}
+
+.h3-footer{
+    color: #666;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.p-copyright{
+    color: #666;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #ebebeb;
+}
+
 @media (min-width: 361px){
 
     .copy-header{
         max-width: 180px;
         text-align: right;
         margin: 0px;
+        margin-left: 20px;
     }
 
     .search-form{
@@ -123,6 +166,20 @@ body{
     .main-header-bottom-bar li{
         margin: 0px 5px;
     }
+
+    /* Esta parte es más para el footer */
+
+    .main-footer-bar{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .section-footer{
+        margin: 0px 10px;
+    }
 }
 
 @media (min-width: 769px){
@@ -146,7 +203,7 @@ body{
     }
 
     .main-header-bottom-bar{
-        margin-top: 30px;
+        /* margin-top: 30px; */
         flex-wrap: rap;
     }
     
@@ -158,9 +215,9 @@ body{
         font-size: 18px;
     }
 
-    article img, article ul{
+    /* article img, article ul{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    } */
     
     .hamburguer-button{
         display: none;
@@ -168,6 +225,12 @@ body{
 
     .search-form{
         max-width: 1000px;
+    }
+
+    /* Esta parte es más para el footer */
+
+    .main-footer-bar{
+        max-width: 1280px;
     }
 } 
 
