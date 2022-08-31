@@ -128,6 +128,34 @@ body{
     border-top: solid 1px #ebebeb;
 }
 
+/* Esta parte es más para el main */
+
+.main{
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+}
+
+.article i{
+    display: block;
+}
+
+.article{
+    width: 200px;
+    margin: 10px;
+}
+
+.article-description{
+    border-top: solid 1px #ebebeb;
+    padding: 15px; 
+}
+
+.last-visit-section, .oferts-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 @media (min-width: 361px){
 
     .copy-header{
