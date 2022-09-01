@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <div>
+            <input type="text" name="nombre" placeholder="Nombre y apellido" required />
+        </div>
+        <div>
+            <input type="text" name="usuario" placeholder="Nombre de usuario" required />
+        </div>
+        <div>
+            <h4>Fecha de nacimiento</h3>
+            <input type="date" name="nacimiento" placeholder="Fecha de nacimiento" required />
+        </div>
+        <div>
+            <input type="text" name="domicilio" placeholder="Domicilio" required />
+        </div>
+        <div>
+            <h4>Perfil del usuario</h3>
+                <label>Comprador</label>
+                <input type="radio" name="perfil" value="comprador" checked /> 
+                <label>Vendedor</label>
+                <input type="radio" name="perfil" value="vendedor" /> 
+        </div>
+        <div>
+            <h4>Categorías de interés</h3>
+                <input type="checkbox" name="categoria" id="check1" value="electro" />
+                <label>Electro</label>
+                <br>
+                <input type="checkbox" name="categoria" id="check1" value="moda" />
+                <label>Moda</label>
+                <br>
+                <input type="checkbox" name="categoria" id="check1" value="hogar" />
+                <label>Hogar</label>
+                <br>
+                <input type="checkbox" name="categoria" id="check1" value="jugueteria" />
+                <label>Juguetería</label>
+                <br>
+                <input type="checkbox" name="categoria" id="check1" value="vidasana" />
+                <label>Vida sana</label>
+        </div>
+        <div>
+            <input type="file" name="foto" />
+        </div>
+        <div>
+            <input type="password" placeholder="Contraseña"  name="clave" required />
+        </div>
+        <div>
+            <input type="password" placeholder="Contraseña"  name="confirmarclave" required />
+        </div>
+        <div>
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+            <!-- <button type="submit"><a>Enviar</a></button> ESTA OPCIÓN ME ENVIARÍA AL HOME PERO SIN LOS DATOS DEL FORMULARIO  -->  
+        </div>
+    </form>
+</body>
+</html>
