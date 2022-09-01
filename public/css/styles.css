@@ -129,9 +129,9 @@ body{
     border-top: solid 1px #ebebeb;
 }
 
-/* Esta parte es más para el main */
+/* Esta parte es más para el main-home */
 
-.main{
+.main-home{
     text-align: center;
     /* width: 90vw; */
     margin: auto;
@@ -139,7 +139,7 @@ body{
     padding-bottom: 30px;
 }
 
-.main h4{
+.main-home h4{
     margin: 0px;
     padding: 20px 0px;
     font-size: 20px;
@@ -224,6 +224,37 @@ body{
     color:#39b54a
 }
 
+/* Esta parte es para el main-login */
+
+.main-login{
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+.input-container{
+    margin-bottom: 25px;
+}
+
+.input-container input{
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-style: none;
+    border-right: 1px solid #ebebeb;
+}
+
+.send-button{
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #1259c3;
+}
+
 
 @media (min-width: 361px){
 
@@ -278,7 +309,7 @@ body{
         margin: 0px 10px;
     }
 
-    /* Esta parte es más para el main */
+    /* Esta parte es más para el main-home */
 
     .article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);

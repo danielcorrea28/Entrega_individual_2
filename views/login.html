@@ -3,21 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Login</title>
 </head>
+
 <body>
-    <form action="/" method="GET">
-        <div>
-            <input type="text" name="usuario" placeholder="Nombre de usuario" required />
+
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <!-- Logo Mercado Liebre -->
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"> </img>
+            <!-- Barra de búsqueda -->
+            <form action="#" method="GET" class="search-form"> 
+                <input type="text" placeholder="Buscar productos, marcas" name="busqueda" class="search-input">
+                <a href="#" class="search-button"><i class="fa fa-search"></i></a>
+            </form>
+            <!-- Texto -->
+            <p class="copy-header">Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i></p>
         </div>
-        <div>
-            <input type="password" placeholder="Contraseña"  name="clave" />
+        
+        <!-- Hamburguer button -->
+        <a href="#" class="hamburguer-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <!-- Menú de navegación-->
+        <nav class="main-header-bottom-bar">
+            <ul class="left-navbar">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+              <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+              <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li> 
+              <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-login">
+        <form action="/" method="GET" class="login-form">
+            <div class="input-container">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required />
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Contraseña"  name="clave" />
+            </div>
+            <div>
+                <!-- <button type="reset">Borrar</button> -->
+                <button class="send-button" type="submit">Enviar</button>
+                <!-- <button type="submit"><a>Enviar</a></button> ESTA OPCIÓN ME ENVIARÍA AL HOME PERO SIN LOS DATOS DEL FORMULARIO  -->     
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer-bar">
+            <section class="section-footer">
+                <i class='fa fa-credit-card-alt'></i>
+                <h3 class="h3-footer">Pagá con tarjeta o efectivo</h3>
+                <p class="p-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="section-footer">
+                <i class="fa-solid fa-gift"></i>
+                <h3 class="h3-footer">Envío gratis desde $ 2.500</h3>  
+                <p class="p-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="section-footer">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3 class="h3-footer">Seguridad de principio a fin</h3>
+                <p class="p-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </section>
         </div>
-        <div>
-            <button type="reset">Borrar</button>
-            <button type="submit">Enviar</button>
-            <!-- <button type="submit"><a>Enviar</a></button> ESTA OPCIÓN ME ENVIARÍA AL HOME PERO SIN LOS DATOS DEL FORMULARIO  -->     
-        </div>
-    </form>
+        <p class="p-copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/70f7d39aeb.js" crossorigin="anonymous"></script>
 </body>
 </html>
