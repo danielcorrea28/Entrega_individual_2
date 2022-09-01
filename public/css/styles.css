@@ -132,17 +132,52 @@ body{
 
 .main{
     text-align: center;
-    width: 90vw;
+    /* width: 90vw; */
     margin: auto;
+    background-color: #ebebeb;
+    padding-bottom: 30px;
 }
+
+.main h4{
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: #666;
+}
+
+/* .article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 150px;
+    top: -28px;
+} */
 
 .article i{
     display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 175px;
+    top: 15px;
 }
 
 .article{
-    width: 200px;
+    width: 220px;
     margin: 10px;
+    background-color: white;
 }
 
 .article-description{
@@ -154,7 +189,40 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
+
+/* .fa-solid.fa-truck::before{
+    color: green;
+    border-radius: 50%;
+    border: 1px solid green;
+    padding: 7px;
+} */
+
+.descripcion{
+    display: none;
+}
+
+.precio-descuento{
+    display: flex;
+    align-items: center;
+}
+
+.precio-descuento p{
+    margin: 10px 0px;
+}
+
+/* .precio{  Lo comenté porque se pega el precio de 230.000 con el descuento
+    width: 30%;
+} */
+
+.descuento{
+    width: 70%;
+    text-align: left;
+    padding-left: 10px;
+    color:#39b54a
+}
+
 
 @media (min-width: 361px){
 
@@ -208,6 +276,18 @@ body{
     .section-footer{
         margin: 0px 10px;
     }
+
+    /* Esta parte es más para el main */
+
+    .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descripcion{
+        display: block;
+        margin: 0px;
+        text-align: left;
+    }
 }
 
 @media (min-width: 769px){
@@ -231,8 +311,7 @@ body{
     }
 
     .main-header-bottom-bar{
-        /* margin-top: 30px; */
-        flex-wrap: rap;
+        margin-top: 10px;
     }
     
     .main-header-bottom-bar li{
@@ -242,11 +321,7 @@ body{
     .main-header-bottom-bar a{
         font-size: 18px;
     }
-
-    /* article img, article ul{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } */
-    
+  
     .hamburguer-button{
         display: none;
     }
