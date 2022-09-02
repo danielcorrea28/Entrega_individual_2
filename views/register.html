@@ -14,7 +14,7 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <!-- Logo Mercado Liebre -->
-            <img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"> </img>
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></img></a>
             <!-- Barra de búsqueda -->
             <form action="#" method="GET" class="search-form"> 
                 <input type="text" placeholder="Buscar productos, marcas" name="busqueda" class="search-input">
@@ -47,56 +47,68 @@
     </header>
 
     <main class="main-register">
-        <form action="/" method="POST">
-            <div>
-                <input type="text" name="nombre" placeholder="Nombre y apellido" required />
+        <form action="/" method="POST" class="register-form">
+            <h4>Nombre y Apellido</h4>
+            <div class="register-input-container">
+                <input type="text" name="nombre" placeholder="ej: Jhon Doe" required />
             </div>
-            <div>
-                <input type="text" name="usuario" placeholder="Nombre de usuario" required />
+            <h4>Nombre de usuario</h4>
+            <div class="register-input-container">
+                <input type="text" name="usuario" placeholder="ej: jdoe3000" required />
             </div>
-            <div>
-                <h4>Fecha de nacimiento</h3>
+            <h4>Fecha de nacimiento</h4>
+            <div class="register-input-container">
                 <input type="date" name="nacimiento" placeholder="Fecha de nacimiento" required />
             </div>
-            <div>
+            <h4>Dirección de residencia</h4>
+            <div class="register-input-container">
                 <input type="text" name="domicilio" placeholder="Domicilio" required />
             </div>
-            <div>
-                <h4>Perfil del usuario</h3>
+            <h4>Perfil del usuario</h4>
+            <div class="register-input-radio-container">                
                     <label>Comprador</label>
                     <input type="radio" name="perfil" value="comprador" checked /> 
                     <label>Vendedor</label>
                     <input type="radio" name="perfil" value="vendedor" /> 
             </div>
-            <div>
-                <h4>Categorías de interés</h3>
-                    <input type="checkbox" name="categoria" id="check1" value="electro" />
-                    <label>Electro</label>
-                    <br>
-                    <input type="checkbox" name="categoria" id="check1" value="moda" />
-                    <label>Moda</label>
-                    <br>
-                    <input type="checkbox" name="categoria" id="check1" value="hogar" />
-                    <label>Hogar</label>
-                    <br>
-                    <input type="checkbox" name="categoria" id="check1" value="jugueteria" />
-                    <label>Juguetería</label>
-                    <br>
-                    <input type="checkbox" name="categoria" id="check1" value="vidasana" />
-                    <label>Vida sana</label>
+            <h4>Categorías de interés</h4>
+            <div class="register-input-checkbox-container">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="categoria" id="electro" value="electro" />
+                    <label for="electro" >Electro</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="categoria" id="moda" value="moda" />
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="categoria" id="hogar" value="hogar" />
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="categoria" id="jugueteria" value="jugueteria" />
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="categoria" id="vidasana" value="vidasana" />
+                    <label for="vidasana">Vida sana</label>
+                </div>
             </div>
-            <div>
+            <h4>Imagen de perfil</h4>
+            <div class="register-input-container">
                 <input type="file" name="foto" />
             </div>
-            <div>
-                <input type="password" placeholder="Contraseña"  name="clave" required />
+            <h4>Nueva contraseña</h4>
+            <div class="register-input-container">
+                <input type="password" placeholder="Debe incluir una letra mayúscula"  name="clave" required />
+            </div class="register-input-container">
+            <h4>Repita nueva contraseña</h4>
+            <div class="register-input-container">
+                <input type="password" placeholder="Debe incluir una letra mayúscula"  name="confirmarclave" required />
             </div>
-            <div>
-                <input type="password" placeholder="Contraseña"  name="confirmarclave" required />
-            </div>
-            <div>
-                <button type="reset">Borrar</button>
-                <button type="submit">Enviar</button>
+            <div class="buttons-container">
+                <button type="reset" class="register-reset-button">Borrar</button>
+                <button type="submit" class="register-send-button">Registrarse</button>
                 <!-- <button type="submit"><a>Enviar</a></button> ESTA OPCIÓN ME ENVIARÍA AL HOME PERO SIN LOS DATOS DEL FORMULARIO  -->  
             </div>
         </form>
