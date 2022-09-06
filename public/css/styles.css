@@ -108,6 +108,7 @@ body{
     color:#1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all 500ms; 
 }
 
 .p-footer{
@@ -396,6 +397,7 @@ body{
     }
 }
 
+
 @media (min-width: 769px){
     
     .logo{
@@ -436,10 +438,38 @@ body{
         max-width: 1000px;
     }
 
+    /* Esta parte es más para el main-home */
+
+    .descripcion{
+        display: none;
+        margin: 0px;
+        text-align: left;
+    }
+
+    /* .precio-descuento:hover::after{ Esto es solo para recordar que puedo agregar contenido después utilizando el after y estos e hace cuando haya hover
+        content: " (" attr(class) ") "  esto para recordar que en el content puedo agregar un attributo existente, en este caso lo que se agrega es lo que está dentro de precio descuento
+    } */                                
+
+    .article-description:hover .descripcion{ /* cuando le hago hover al .article-descripcion, muestra .descripcion que antes estaba oculto. Esto funciona porque .descripcion está adentro de .article-description */
+        display: block;
+    }
+
+    i[name="truck-icon"]:hover {
+        transform: rotate(-90deg);
+    }
+
+    /* Esta parte es más para el main-login */
+    button:hover{
+        background-color: #0022AA;
+    }
     /* Esta parte es más para el footer */
 
     .main-footer-bar{
         max-width: 1280px;
+    }
+
+    .section-footer i:hover{
+        color: #39b54a;
     }
 } 
 
